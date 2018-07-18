@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Title</title>
+</head>
+<body onload="printElements()">
+<main>
+
+<h3> USAGE: </h3>
+<h4>
+  + word: tłum1 tłum2 tłum3 // dodawanie do słownika <br />
+  - word // usuwanie ze słownika <br />
+  ^ word: tłum1 tłum2 tłum3 // aktualizacja tłumaczeń słowa w słowniku <br />
+</h4>
+
+    <form>
+        <input name="pole_tekstowe" type="text">
+        <input type="button" value="Execute" onclick="performAction()">
+        <input type="button" value="Print" onclick="printElements()">
+
+    </form>
+
+
+    <p id="dictionary"></p>
+
+
+    <canvas width=1000
+            height=500
+            style="border:1px solid #000000;">
+        Wygląda na to, że twoja przeglądarka nie obsługuje elementu "canvas"
+    </canvas>
+
+    <script src="script.js"></script>
+
+
+</main>
+
+</body>
+</html>
